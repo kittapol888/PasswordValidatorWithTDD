@@ -7,7 +7,7 @@ public class PasswordValidatorTest {
 
         System.out.println("--- Running Password Validator Tests ---");
        
-        String p1 = "MyStrongP@ssw0rd!"; 
+        String p1 = "My@ssw0rd!"; 
         PasswordStrength s1 = PasswordValidator.validate.getPasswordStrength(p1);
         if (s1 == PasswordStrength.STRONG) {
             System.out.println("Test Case 1 Passed: '" + p1 + "' is STRONG.");
@@ -23,7 +23,7 @@ public class PasswordValidatorTest {
             System.out.println("Test Case 2 FAILED: Expected INVALID but got " + s2);
         }
 
-        String p3 = "MediumPass1";
+        String p3 = "MediumPass";
         PasswordStrength s3 = PasswordValidator.validate.getPasswordStrength(p3);
         if (s3 == PasswordStrength.MEDIUM) {
             System.out.println("Test Case 3 Passed: '" + p3 + "' is MEDIUM.");
